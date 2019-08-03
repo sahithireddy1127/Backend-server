@@ -3,15 +3,15 @@ A micro service API server that exposes the following 2 APIs that accept JSON da
 
 ##  Instructions to setup
 - python- 3.7
-Postgres 
-Postman
-Redis
+- Postgres 
+- Postman
+- Redis
 
 ## Installations
-FLASK
-Mock
-redis
-psycopg2
+- flask
+- mock
+- redis
+- psycopg2
 
 ## Steps to run the code in local
 First create a database in postgres sql shell CLI.
@@ -35,6 +35,8 @@ This is the sample JSON request
 Hit send and check for response.
 
 ## Unit Testing
+Run  py test_flask_app.py 
+you can see the response code for both the API's
 
     
 
