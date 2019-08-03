@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTTP {{status}} error</title>
+</head>
+<body>
+	{% if status == 405 %}
+	<h2>Method not allowed</h2>
+	{% elif status == 403 %}
+	<h2>Forbidden Error</h2> 
+	{% else %}
+	<h2>Unexpected Error</h2>
+	{% endif %}
+</body>
+</html>
