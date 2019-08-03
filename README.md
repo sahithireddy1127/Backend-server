@@ -1,5 +1,19 @@
-# Backend-server
+## Backend-server
 A micro service API server that exposes the following 2 APIs that accept JSON data as input to POST requests. 
+
+# API Behaviour For Inbound
+-  Authentication is based on username and auth_id
+-  Input validation 
+-  ‘to’ parameter check in phone_number table for this specific account 
+-  The ‘from’ and ‘to’  pair is stored in cache as a unique entry and expire's after 4 hours
+
+# API Behaviour For Outbound
+-  Authentication is based on username and auth_id
+-  Input validation 
+-  ‘from’ parameter check in phone_number table for this specific account 
+-  Using cache, does not allow more then 50 API requests for a number in 24 hrs.
+-  If the pair ‘to’, ‘from’ matches any entry in cache (STOP) returns error 
+
 
 ##  Instructions to setup
 - python- 3.7
